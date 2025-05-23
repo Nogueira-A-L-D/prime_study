@@ -19,27 +19,27 @@ tempo_inicial_execucao = time.time()
 
 
 # Digitação da quantidade de primos a serem obtidos
-primes_quantity = int(input("Qual a quantidade de primos? :> "))
+primes_quantity = int(input("How much prime numbers? :> "))
 
 
 # Inicialização das funções e a busca pelos primos
 tempo_inicial_primos = time.time()
-print("Obtendo Primos")
+print("Getting Primes")
 f_superior = LogFunction(math.sqrt(5))
 primes = list(primerange(1, nextprime(1,primes_quantity)+1))  # 15485863 é o 1.000.000º primo
 f_inferior = LogFunction(math.sqrt(7))
-print("Primos Obtidos\n")
+print("Primes Obtained\n")
 tempo_final_primos = time.time()
 
 
 sup_list = []
 inf_list = []
-falhas_margem = "Nao"
+falhas_margem = "No"
 count = 1
 
 # Teste para ver se as funções servem como margem para os números primos
 tempo_inicial_teste = time.time()
-print("Teste iniciando...")
+print("Beggining test...")
 for i in primes:
     
     sup_y = f_superior.on(count)
@@ -49,8 +49,8 @@ for i in primes:
     inf_list.append(inf_y)
 
     if (sup_y<i or i<inf_y): # Caso de falha nas nas funções de margem, relatar no terminal
-        print("Falha na margem")
-        falhas_margem = "Sim"
+        print("Fail: margin doesn't contain the value.")
+        falhas_margem = "Yes"
         break
     count = count + 1
 
@@ -63,25 +63,25 @@ tempo_final_teste = time.time()
 
 save = 'y'
 if not autosave:
-    save = input("Deseja salvar?[y/n] :> ")
+    save = input("Do you want to save changes?[y/n] :> ")
 
 
 # Salvamento caso desejado
 tempo_inicial_salvamento = time.time()
 if save=='y' or autosave:
     # Salvar em um arquivo .txt separado por vírgulas
-    with open("resultados/primos.txt", "w") as f:
+    with open("results/primes.txt", "w") as f:
         f.write(','.join(map(str, primes)))
-    with open("resultados/superior.txt", "w") as f:
+    with open("results/superior.txt", "w") as f:
         f.write(','.join(map(str,sup_list)))
-    with open("resultados/inferior.txt", "w") as f:
+    with open("results/inferior.txt", "w") as f:
         f.write(','.join(map(str,inf_list)))
 tempo_final_salvamento = time.time()
 
 
 # Armazenamento das informações no log
-with open("resultados/log.txt", "a+") as f:
+with open("results/log.txt", "a+") as f:
     if save=='y' or autosave:
-        f.write("Duracao do Programa: " + str(int(time.time()-tempo_inicial_execucao)) + " s\n Quantidade de Primos: " + str(primes_quantity) + "\n Tempo de Coleta Primos: " + str(int(tempo_final_primos - tempo_inicial_primos)) + " s\n Tempo de Teste: " + str(int(tempo_final_teste - tempo_inicial_teste)) + " s\n Tempo de Salvamento: " + str(int(tempo_final_salvamento - tempo_inicial_salvamento)) + " s\n Falhas na Margem: " + falhas_margem +"\n\n")
+        f.write("Program Duration: " + str(int(time.time()-tempo_inicial_execucao)) + " s\n Quantity of Primes: " + str(primes_quantity) + "\n Time to Get Primes: " + str(int(tempo_final_primos - tempo_inicial_primos)) + " s\n Time to Test Margin: " + str(int(tempo_final_teste - tempo_inicial_teste)) + " s\n Time to Save: " + str(int(tempo_final_salvamento - tempo_inicial_salvamento)) + " s\n Fails in Margin: " + falhas_margem +"\n\n")
     else:
-        f.write("Duracao do Programa: " + str(int(time.time()-tempo_inicial_execucao)) + " s\n Quantidade de Primos: " + str(primes_quantity) + "\n Tempo de Coleta Primos: " + str(int(tempo_final_primos - tempo_inicial_primos)) + " s\n Tempo de Teste: " + str(int(tempo_final_teste - tempo_inicial_teste)) + " s\n Falhas na Margem: " + falhas_margem +"\n\n")
+        f.write("Programa Duration: " + str(int(time.time()-tempo_inicial_execucao)) + " s\n Quantity of Primes: " + str(primes_quantity) + "\n Time to Get Primes: " + str(int(tempo_final_primos - tempo_inicial_primos)) + " s\n Time to Test Margin: " + str(int(tempo_final_teste - tempo_inicial_teste)) + " s\n Fails in Margin: " + falhas_margem +"\n\n")
