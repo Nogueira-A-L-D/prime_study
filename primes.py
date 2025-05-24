@@ -90,6 +90,8 @@ with open("results/log.txt", "a+") as f:
     else:
         f.write("Program Duration: " + str(int(time.time()-initial_program_time)) + " s\n Quantity of Primes: " + str(primes_quantity) + "\n Time to Get Primes: " + str(int(final_primes_time - initial_primes_time)) + " s\n Time to Test Margin: " + str(int(final_test_time - initial_test_time)) + " s\n Fails in Margin: " + margin_failure +"\n\n")
 
+# To close the virtual enviroment, just use "deactivate"
+
 # Conclusion:
 # Until now, all prime values are inside the margin, being necessary to create the inverse of this function to check if all x positions
 # are inside the limits of these functions, confirming that we can find a function that should approximate the prime distribution and,
