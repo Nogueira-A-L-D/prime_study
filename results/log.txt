@@ -1,0 +1,14 @@
+Program Duration: 7 s
+ Quantity of Primes: 100
+ Time to Get Primes: 0 s
+ Time to Test Margin: 0 s
+ Time to Save: 0 s
+ Fails in Margin: No
+
+Program Duration: 31 s
+ Quantity of Primes: 1000000
+ Time to Get Primes: 22 s
+ Time to Test Margin: 1 s
+ Time to Save: 1 s
+ Fails in Margin: No
+

@@ -1,15 +1,12 @@
 # By Andre Luis Dias Nogueira
 
-# Download VS Code and Python (or a Python IDE)
-# Create a virtual enviroment with "python -m venv /path/"
-# Use "pip install -r requirements.txt" to be able to continue
-import math, time
+# Download VS Code and Python 3.13.3 (or a Python IDE)
+# Use "pip install virtualenv" and create a virtual enviroment with "python -m venv venv"
+# Use "venv/Scripts/activate.ps1" and "pip install -r requirements.txt" to be able to continue
+import time, math
 from sympy.ntheory.generate import primerange, nextprime
 
-# Enable/disable autosave
-autosave = False
-
-# Function to be used to create a margin area that always have
+# Mathematical function to be used to create a margin area that always have primes
 class LogFunction:
     
     def __init__(self, base):
@@ -18,6 +15,8 @@ class LogFunction:
     def on(self, x):
         return math.log(x, self.base) * x + (1/x) + (1)
 
+# Enable/disable autosave
+autosave = False
 
 # Counting the time of the program
 initial_program_time = time.time()
