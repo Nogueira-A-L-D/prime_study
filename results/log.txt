@@ -1,0 +1,67 @@
+Program Duration: 7 s
+ Quantity of Primes: 100
+ Time to Get Primes: 0 s
+ Time to Test Margin: 0 s
+ Time to Save: 0 s
+ Fails in Margin: No
+
+Program Duration: 31 s
+ Quantity of Primes: 1000000
+ Time to Get Primes: 22 s
+ Time to Test Margin: 1 s
+ Time to Save: 1 s
+ Fails in Margin: No
+
+Program Duration: 39 s
+ Quantity of Primes: 1000000
+ Time to Get Primes: 22 s
+ Time to Test Margin: 1 s
+ Time to Save: 1 s
+ Fails in Margin: No
+
+Program Duration: 34 s
+ Quantity of Primes: 1000000
+ Time to Get Primes: 23 s
+ Time to Test Margin: 2 s
+ Time to Save: 1 s
+ Fails in Margin: No
+
+Program Duration: 38 s
+ Quantity of Primes: 100
+ Time to Get Primes: 0 s
+ Time to Test Margin: 0 s
+ Fails in Margin: No
+
+Program Duration: 349 s
+ Quantity of Primes: 100
+ Time to Get Primes: 0 s
+ Time to Test Margin: 0 s
+ Fails in Margin: No
+
+Program Duration: 6 s
+ Quantity of Primes: 100
+ Time to Get Primes: 0 s
+ Time to Test Margin: 0 s
+ Fails in Margin: No
+
+Program Duration: 45 s
+ Quantity of Primes: 1000000
+ Time to Get Primes: 20 s
+ Time to Test Margin: 16 s
+ Time to Save: 1 s
+ Fails in Margin: No
+
+Program Duration: 50 s
+ Quantity of Primes: 1000000
+ Time to Get Primes: 22 s
+ Time to Test Margin: 17 s
+ Time to Save: 2 s
+ Fails in Margin: No
+
+Program Duration: 529 s
+ Quantity of Primes: 10000000
+ Time to Get Primes: 296 s
+ Time to Test Margin: 178 s
+ Time to Save: 42 s
+ Fails in Margin: No
+
