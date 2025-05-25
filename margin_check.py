@@ -41,7 +41,7 @@ initial_program_time = time.time()
 primes_quantity = int(input("How much prime numbers? :> "))
 
 
-# Inicializing functions and the prime list
+# Initializing functions and the prime list
 initial_primes_time = time.time()
 print("Getting Primes")
 
@@ -82,7 +82,7 @@ for i in primes:
     sup_list_x.append(sup_x)
     inf_list_x.append(inf_x)
 
-    if (sup_y<i or i<inf_y or sup_x>count or inf_x<count): # If the margin fails, mark on log or shell
+    if (sup_y<i or i<inf_y or sup_x>count or inf_x<count): # If the margin fails, mark on log and shell
         print("Fail: margin doesn't contain the value.")
         margin_failure = "Yes"
         break
